@@ -17,16 +17,16 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+Yo {}, I'm {}!
 
-I am an Anime themed group management bot with a lot of Special Features.
+Anime themed group management bot with a lot of Special Features.
 You can find the list of available commands with /help.
 
 Base @LyndaRobot
 ==========================
--> [Chizuru's Repo](https://github.com/Yashiro-San/Chizuru/)
+-> [Ace's Repo](https://github.com/Anomaliii/Ace/)
 ==========================
-`Maintained by` @Yashiro404
+`Maintained by` @Anomaliii
 
 """
 
@@ -37,7 +37,7 @@ I'm a management bot.
 Have a look at the following for an idea of some of \
 the things I can help you with.
 
-I'm managed by [Yashi](https://t.me/Yashiro404)
+I'm managed by [Ace](https://t.me/Anomaliii)
 Chatbot module from [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot.git)
 Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot)
 *Main* commands available:
@@ -53,7 +53,7 @@ Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/d99a35ca14f8a1b01abbf.jpg"
+LYNDA_IMG = "https://telegra.ph/file/d3ef9b4f027cf8e125ef2.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Chizuru is hosted on one of Heroku. \
@@ -146,9 +146,9 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="📱 Rent Chizuru to your group", url="https://t.me/ChizuruChanBot?startgroup=new")],
-                 [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/joinchat/MCPZ_li6GFtEIh5OcvOOsA"), InlineKeyboardButton(text="🚫 Global Logs", url="http://t.me/ChizuruxRukaGbanLog")],
-                 [InlineKeyboardButton(text="❔ Help", callback_data="help_back"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/LyndaUpdateLogs")]])
+                [[InlineKeyboardButton(text="Add Ace Chizuru to your group", url="https://t.me/PDAceBot?startgroup=new")],
+                 [InlineKeyboardButton(text="Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="Global Logs", url="http://t.me/zerobotog")],
+                 [InlineKeyboardButton(text="Help", callback_data="help_back"), InlineKeyboardButton(text="Update Channel", url="https://t.me/LyndaUpdateLogs")]])
             message.reply_photo(
                 LYNDA_IMG,
                 PM_START_TEXT.format(
