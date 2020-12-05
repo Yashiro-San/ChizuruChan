@@ -146,9 +146,9 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Add Ace Chizuru to your group", url="https://t.me/PDAceBot?startgroup=new")],
+                [[InlineKeyboardButton(text="Add Ace to your group", url="https://t.me/PDAceBot?startgroup=new")],
                  [InlineKeyboardButton(text="Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="Global Logs", url="http://t.me/zerobotog")],
-                 [InlineKeyboardButton(text="Help", callback_data="help_back"), InlineKeyboardButton(text="Update Channel", url="https://t.me/LyndaUpdateLogs")]])
+                 [InlineKeyboardButton(text="Update Channel", url="https://t.me/LyndaUpdateLogs")]])
             message.reply_photo(
                 LYNDA_IMG,
                 PM_START_TEXT.format(
