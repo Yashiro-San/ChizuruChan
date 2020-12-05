@@ -53,7 +53,7 @@ Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/d3ef9b4f027cf8e125ef2.jpg"
+LYNDA_IMG = "https://telegra.ph/file/de52e1ac242d06673a67a.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Chizuru is hosted on one of Heroku. \
