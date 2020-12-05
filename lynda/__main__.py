@@ -17,7 +17,7 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Yo {}, I'm {}!
+Yo! {}, I'm {}.
 
 Anime themed group management bot with a lot of Special Features.
 You can find the list of available commands with /help.
@@ -26,7 +26,7 @@ Based From: @LyndaRobot
 ××××××××××××××××××××××××××
 -> [Ace's Repo](https://github.com/Anomaliii/Ace/)
 ××××××××××××××××××××××××××
-`Maintained by` [Ace](https://t.me/Anomaliii)
+`Maintained by` @Anomaliii
 
 """
 
