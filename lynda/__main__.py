@@ -22,11 +22,11 @@ Yo {}, I'm {}!
 Anime themed group management bot with a lot of Special Features.
 You can find the list of available commands with /help.
 
-Base @LyndaRobot
-==========================
+Based From: @LyndaRobot
+××××××××××××××××××××××××××
 -> [Ace's Repo](https://github.com/Anomaliii/Ace/)
-==========================
-`Maintained by` @Anomaliii
+××××××××××××××××××××××××××
+`Maintained by` [Ace](https://t.me/Anomaliii)
 
 """
 
@@ -147,7 +147,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Add Ace to your group", url="https://t.me/PDAceBot?startgroup=new")],
-                 [InlineKeyboardButton(text="Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="Global Logs", url="http://t.me/zerobotog")],
+                 [InlineKeyboardButton(text="Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="Global Logs", url="http://t.me/zerobotlog")],
                  [InlineKeyboardButton(text="Update Channel", url="https://t.me/LyndaUpdateLogs")]])
             message.reply_photo(
                 LYNDA_IMG,
