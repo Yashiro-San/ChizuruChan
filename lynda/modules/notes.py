@@ -34,18 +34,18 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import ubotindo.modules.sql.notes_sql as sql
-from ubotindo import LOGGER, MESSAGE_DUMP, dispatcher
-from ubotindo.modules.connection import connected
-from ubotindo.modules.disable import DisableAbleCommandHandler
-from ubotindo.modules.helper_funcs.alternate import typing_action
-from ubotindo.modules.helper_funcs.chat_status import (
+import lynda.modules.sql.notes_sql as sql
+from lynda import LOGGER, MESSAGE_DUMP, dispatcher
+from lynda.modules.connection import connected
+from lynda.modules.disable import DisableAbleCommandHandler
+from lynda.modules.helper_funcs.alternate import typing_action
+from lynda.modules.helper_funcs.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from ubotindo.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from ubotindo.modules.helper_funcs.msg_types import get_note_type
-from ubotindo.modules.helper_funcs.string_handling import (
+from lynda.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from lynda.modules.helper_funcs.msg_types import get_note_type
+from lynda.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
