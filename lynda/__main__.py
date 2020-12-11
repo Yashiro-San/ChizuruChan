@@ -17,15 +17,15 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey there!, My name is {}!
+Hey there! My name is {}!
 I'm a modular group management bot with a few fun extras!
 You can find the list of available commands with /help.
 
 Based From: @LyndaRobot
-××××××××××××××××××××××××××
+=========================
 -> [Kai's Repo](https://github.com/Anomaliii/Kai/)
-××××××××××××××××××××××××××
-`Managed by` @Anomaliii
+=========================
+`Managed By` @Anomaliii
 
 """
 
