@@ -25,7 +25,7 @@ Based From: @LyndaRobot
 =========================
 -> [Kai's Repo](https://github.com/Anomaliii/Kai/)
 =========================
-`Managed By` @Anomaliii
+`Managed By` [Ace](https://t.me/Anomaliii)
 
 """
 
@@ -145,9 +145,9 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Add Kai to your group", url="https://t.me/ChisakiKaiBot?startgroup=new")],
-                 [InlineKeyboardButton(text="Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="Global Logs", url="http://t.me/zerobotlog")],
-                 [InlineKeyboardButton(text="Update Channel", url="https://t.me/LyndaUpdateLogs")]])
+                [[InlineKeyboardButton(text="👥 Add Kai to your group", url="https://t.me/ChisakiKaiBot?startgroup=new")],
+                 [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="🚫 Global Logs", url="http://t.me/zerobotlog")],
+                 [InlineKeyboardButton(text="❔ Help & Commands", url="https://t.me/ChisakiKaiBot?start=help"]])
             message.reply_photo(
                 LYNDA_IMG,
                 PM_START_TEXT.format(
