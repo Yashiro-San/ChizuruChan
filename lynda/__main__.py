@@ -24,7 +24,7 @@ You can find the list of available commands with /help.
 
 Based From: @LyndaRobot
 ××××××××××××××××××××××××××
--> [Ace's Repo](https://github.com/Anomaliii/Ace/)
+-> [Zero's Repo](https://github.com/Anomaliii/Zero/)
 ××××××××××××××××××××××××××
 `Maintained by` @Anomaliii
 
@@ -53,7 +53,7 @@ Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/e2c51e3d6049655b113d7.jpg"
+LYNDA_IMG = "https://telegra.ph/file/8b6ea4750c9f48c5e5fad.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Ace is hosted on one of Heroku. \
@@ -159,7 +159,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=buttons)
     else:
-        message.reply_text("Hola!")
+        message.reply_text("Yooo!")
 
 
 # for test purposes
@@ -460,7 +460,7 @@ def migrate_chats(_bot: Bot, update: Update):
     elif msg.migrate_from_chat_id:
         old_chat = msg.migrate_from_chat_id
         new_chat = update.effective_chat.id
-    else:
+    else: 
         return
 
     LOGGER.info("Migrating from %s, to %s", str(old_chat), str(new_chat))
