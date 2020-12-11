@@ -1,5 +1,5 @@
-![Zero](https://telegra.ph/file/a52cfce7831d673bfd8cb.jpg)
-# Zero
+![Kai](https://telegra.ph/file/3fcebcc54e9a5be561ccc.jpg)
+# Kai
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/pokurt/LyndaRobot/?ref=repository-badge)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/41ee9ac813a34042925a6b6fa92cf84e)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AmaanAhmed/Lynda&amp;utm_campaign=Badge_Grade) [![Join Support!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/LyndaEagleSupport) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/pokurt/LyndaRobot/graphs/contributors/)
 
@@ -9,7 +9,7 @@ A modular telegram Python bot running on python3 with an sqlalchemy database.
 
 Originally a [Kigyō](https://t.me/kigyorobot) fork - Lynda has evolved further and was built to be more useful for Anime Chats. 
 
-Can be found on telegram as [Zero](https://t.me/IamZero_Bot).
+Can be found on telegram as [Kai](https://t.me/IamZero_Bot).
 
 The Support group can be reached out to at [ZeroBotSupport](https://t.me/ZeroBotSupport), where you can ask for help setting up your bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
