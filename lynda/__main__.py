@@ -17,22 +17,22 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Yoo {}, I'm {}!
-
-Anime themed group management bot with a lot of Special Features.
+Hey there! {}, My name is {}!
 You can find the list of available commands with /help.
 
 Based From: @LyndaRobot
 ××××××××××××××××××××××××××
--> [Zero's Repo](https://github.com/Anomaliii/Zero/)
+-> [Kai's Repo](https://github.com/Anomaliii/Kai/)
 ××××××××××××××××××××××××××
-`Maintained by` @Anomaliii
+`Managed by` @Anomaliii
+
+Wanna add me to your Group? Just click the button below!
 
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a management bot.
+Hello there! My name is *{}*.
+I'm a modular group management bot with a few fun extras!
 
 Have a look at the following for an idea of some of \
 the things I can help you with.
@@ -146,7 +146,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Add Ace to your group", url="https://t.me/PDAceBot?startgroup=new")],
+                [[InlineKeyboardButton(text="Add Kai to your group", url="https://t.me/ChisakiKaiBot?startgroup=new")],
                  [InlineKeyboardButton(text="Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="Global Logs", url="http://t.me/zerobotlog")],
                  [InlineKeyboardButton(text="Update Channel", url="https://t.me/LyndaUpdateLogs")]])
             message.reply_photo(
@@ -159,7 +159,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=buttons)
     else:
-        message.reply_text("Yooo!")
+        message.reply_text("Hello!")
 
 
 # for test purposes
