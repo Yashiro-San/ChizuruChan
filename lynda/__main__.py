@@ -147,7 +147,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             buttons = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="👥 Add Kai to your group", url="https://t.me/ChisakiKaiBot?startgroup=new")],
                  [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="🚫 Global Logs", url="http://t.me/zerobotlog")],
-                 [InlineKeyboardButton(text="❔ Help & Commands", url="https://t.me/ChisakiKaiBot?start=help"]])
+                 [InlineKeyboardButton(text="❔ Help & Commands", url="https://t.me/ChisakiKaiBot?start=help"]
             message.reply_photo(
                 LYNDA_IMG,
                 PM_START_TEXT.format(
