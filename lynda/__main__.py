@@ -56,7 +56,7 @@ And the following:
 LYNDA_IMG = "https://telegra.ph/file/8b6ea4750c9f48c5e5fad.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Ace is hosted on one of Heroku. \
+Zero is hosted on one of Heroku. \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/muhnurfauzan73),."""
 
