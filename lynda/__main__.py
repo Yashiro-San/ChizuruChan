@@ -47,7 +47,7 @@ Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://i.ibb.co/X5NqhWH/Kai.png"
+LYNDA_IMG = "https://telegra.ph/file/53cb042f56d8dcf11b300.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Kai is hosted on one of Heroku. \
