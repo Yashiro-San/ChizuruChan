@@ -17,15 +17,10 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey there! My name is {}!
+Hey {}, My name is {}!
+Yakuza captain of the Shie Hashaikai.
 I'm a modular group management bot with a few fun extras!
 You can find the list of available commands with /help.
-
-Based From: @LyndaRobot
-=========================
--> [Kai's Repo](https://github.com/Anomaliii/Kai/)
-=========================
-`Managed By` [Ace](https://t.me/Anomaliii)
 
 """
 
@@ -52,10 +47,10 @@ Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/3fcebcc54e9a5be561ccc.jpg"
+LYNDA_IMG = "https://ibb.co/5WbbqR3"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Zero is hosted on one of Heroku. \
+Kai is hosted on one of Heroku. \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/muhnurfauzan73),."""
 
