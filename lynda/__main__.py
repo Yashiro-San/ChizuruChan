@@ -31,7 +31,7 @@ I'm a modular group management bot with a few fun extras!
 Have a look at the following for an idea of some of \
 the things I can help you with.
 
-I'm managed by [Ace](https://t.me/Anomaliii)
+I'm managed by [Kai](https://t.me/Anomaliii)
 Chatbot module from [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot.git)
 Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot)
 *Main* commands available:
