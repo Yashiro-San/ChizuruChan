@@ -17,27 +17,21 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
-
-I am an Anime themed group management bot with a lot of Special Features.
+Hey {}, My name is {}!
+Yakuza captain of the Shie Hashaikai.
+I'm a modular group management bot with a few fun extras!
 You can find the list of available commands with /help.
-
-Base @LyndaRobot
-==========================
--> [Chizuru's Repo](https://github.com/Yashiro-San/Chizuru/)
-==========================
-`Maintained by` @Yashiro404
 
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a management bot.
+Hello there! My name is *{}*.
+I'm a modular group management bot with a few fun extras!
 
 Have a look at the following for an idea of some of \
 the things I can help you with.
 
-I'm managed by [Yashi](https://t.me/Yashiro404)
+I'm managed by [Kai](https://t.me/Anomaliii)
 Chatbot module from [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot.git)
 Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot)
 *Main* commands available:
@@ -53,10 +47,10 @@ Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/d99a35ca14f8a1b01abbf.jpg"
+LYNDA_IMG = "https://telegra.ph/file/53cb042f56d8dcf11b300.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Chizuru is hosted on one of Heroku. \
+Kai is hosted on one of Heroku. \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/muhnurfauzan73),."""
 
@@ -146,9 +140,9 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="📱 Rent Chizuru to your group", url="https://t.me/ChizuruChanBot?startgroup=new")],
-                 [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/joinchat/MCPZ_li6GFtEIh5OcvOOsA"), InlineKeyboardButton(text="🚫 Global Logs", url="http://t.me/ChizuruxRukaGbanLog")],
-                 [InlineKeyboardButton(text="❔ Help", callback_data="help_back"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/LyndaUpdateLogs")]])
+                [[InlineKeyboardButton(text="👥 Add Kai to your group", url="https://t.me/ChisakiKaiBot?startgroup=new")],
+                 [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/ZeroBotSupport"), InlineKeyboardButton(text="🚫 Global Logs", url="http://t.me/zerobotlog")],
+                 [InlineKeyboardButton(text="❔ Help & Commands", url="https://t.me/ChisakiKaiBot?start=help")]])
             message.reply_photo(
                 LYNDA_IMG,
                 PM_START_TEXT.format(
@@ -159,7 +153,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=buttons)
     else:
-        message.reply_text("Hola!")
+        message.reply_text("Hello!")
 
 
 # for test purposes
@@ -460,7 +454,7 @@ def migrate_chats(_bot: Bot, update: Update):
     elif msg.migrate_from_chat_id:
         old_chat = msg.migrate_from_chat_id
         new_chat = update.effective_chat.id
-    else:
+    else: 
         return
 
     LOGGER.info("Migrating from %s, to %s", str(old_chat), str(new_chat))
